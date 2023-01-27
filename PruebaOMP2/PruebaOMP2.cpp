@@ -1,15 +1,17 @@
 // PruebaOMP2.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
 //
 
+// Aqui cargamos las librerias necesarias para poder trabajar con las funciones de c++ y de omp.
 #include <iostream>
 #include <omp.h>
 
 
-
+//Creamos variables locales para poder trabajar con ellas dentro de todo el código.
 #define N 1000
 #define chunk 100
 #define mostrar 100
 
+//Creamos una función para ahorro de instrucciones y poder trabajar con una ejecucion de instrucciones en cualquier parte del código donde se necesite.
 void imprimeArreglo(float* d);
 
 int main()
